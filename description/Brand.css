@@ -1,0 +1,214 @@
+﻿#BodyBackground
+{
+    min-width:0px;
+}
+
+
+/* Global Styles */
+body 
+{
+    font-size:0.75em;
+}
+
+h1 
+{
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+    color: #000;
+    font-weight: normal;
+    padding-top:4px;
+    margin-bottom: 17px;
+    line-height: 1.3;
+  
+}
+
+h2, h3, h4, h5, h6 
+{
+    font-family: 'Segoe UI Semibold', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+    color:#2a2a2a;
+    font-weight:normal;
+}
+
+a, a:link, a:visited {
+    color: #00749E;
+}
+a:hover {
+    color: #0095c4;
+    text-decoration:none;
+}
+
+
+/*-------- Start ProjectDetailsPage --------*/
+
+#projectPage #projectInfo
+{
+    position: relative;
+    margin-top: 5px;
+    height: 100%;
+}
+#projectInfo .section
+{
+    float: left;
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+    #projectInfo .section .itemBar, #projectInfo .section .itemBarLong
+    {
+        clear: both;
+        padding: 7px 0 7px 0;
+        overflow:auto;
+    }
+    
+     #projectInfo .section .itemBarLong:first-child
+     {
+         padding-top:3px;
+     }
+    
+    .IE7 #projectInfo .section .itemBar, .IE7 #projectInfo .section .itemBarLong
+    {
+        padding-top: 5px;
+    }
+
+    #projectInfo .section .itemBar > label, #projectInfo .section .itemBarLong > label
+    {
+        width: 130px;
+        float: left;
+    }
+
+    #projectInfo .section .itemBar div#yourRating {
+        float:left;
+    }    
+    
+    #projectInfo .section .itemBar div.RatingStar {
+        margin:2px 1px 0 0;
+    }
+
+    #projectInfo .section .itemBar div#RatingCount {
+        padding: 0 0 0 3px;
+    }    
+    
+    #projectInfo .section .itemBar .ratingsWithCountContainer img {
+       vertical-align:top;
+       float:left;
+       padding-right: 4px;
+    }
+
+    #projectInfo .section .itemBar > span, #projectInfo .section .itemBarLong > span, #projectPage .section .itemBar > div
+    {
+        float: left;
+    }
+
+    #projectInfo .section .itemBar, #projectInfo .section .itemBarLong {
+        width: 100%;
+    }
+
+    #projectInfo .section .itemBar > span {
+        float: none;
+    }
+
+    #projectInfo .section .itemBar > span .shareThisItem {
+        white-space: nowrap;
+    }
+    
+    #projectInfo .section .itemBarLong div
+    {
+        margin-left: 130px;
+        padding: 0;
+    }
+    
+     #projectInfo .section .viewonlinecont
+     {
+         background-color:#d3d3d3;
+         padding:5px 10px;
+         margin-top:10px;
+         float:left;
+         font-weight:bold;
+     }
+
+#projectInfo #sectionLeft
+{
+    width: 50%;
+}
+#projectInfo #sectionRight
+{
+    width: 50%;
+}
+.IE7 #projectInfo #sectionRight
+{
+    width: auto;
+}
+
+#projectPage h2.projectSummary
+{    
+    font-weight:normal;
+    font-size: 1.1em;
+    margin-bottom: 11px;
+    line-height:1.4;
+    word-wrap: break-word;
+}
+
+.IE7 #projectPage h2.projectSummary
+{
+    font-family: 'Segoe UI' , 'Lucida Grande' ,Verdana,Arial,Helvetica,sans-serif;
+}
+
+.IE #projectPage .projectTitle, .IE9 #projectPage .projectTitle
+{
+    width: 100%; 
+}
+
+#projectPage #reportAbuse
+{
+    float: left;
+    font-size: x-small;
+}
+
+#projectPage .hiddenSidebar {
+    display: none;
+}
+
+#projectPage .fullProjectBody {
+    margin-left:-275px;
+}
+
+.IE8 #projectPage #userCard {
+    float: left;
+    height: auto;
+}
+
+#projectPage #userCard .avatar img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#projectDetails
+{
+    overflow:hidden;
+}
+
+#projectBody
+{
+    width: 100%;
+    overflow:hidden;
+}
+
+    #projectDetails > div:first-child
+    {
+        margin: 5px 0 0 260px;
+    }
+ 
+    #projectBody > div:first-child
+    {
+        margin: 20px 0 0 260px;
+    }
+
+    .IE7 #projectContent .tabHeaders
+    {
+        overflow:hidden;
+        margin-bottom:-20px;
+    }
+
+
+/*-------- End DocumentView --------*/
+
