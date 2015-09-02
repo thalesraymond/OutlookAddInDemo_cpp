@@ -1,0 +1,47 @@
+// Connect.rgs.txt
+//   Comments on the Connect.rgs file
+
+// ###00005
+// >> Step 5: Outlook-specific registry metadata
+//----------------------------------------------
+
+// This covers the section of Connect.rgs from HKCU through the TestAddin2.Connect section.
+
+// *.rgs files are Registrar scripts.
+// See:
+//  https://msdn.microsoft.com/en-us/library/8350a3tf
+
+// The file format does not admit to comments, thus a separate file has been created.
+
+// Step 5 asks the user to add a specific section into the .rgs file.
+// It is, mercifully, free of magic numbers.  What it isn't, necessarily, is transparent.
+
+// registry shenanigans
+// HKCU translates to HKEY_Current_User
+// NoRemove is a signal to the (un)installer that the given key is not to be removed on uninstall.
+
+// The section thus is inserting elements into the key
+
+//      HKEY_CURRENT_USER/Software/Microsoft/Office/Outlook/Addins/TestAddin2.Connect
+
+// It inserts three values: Description, FriendlyName, and LoadBehavior.
+// Description and FriendlyName are comparable to names used for services and suchlike,
+//    human readable text in an alien computer world.  The "s" before the string indicates that 
+//    string values are being inserted.
+// LoadBehavior is a DWORD, and is set to the default value of "load at startup" (=3)
+//   See https://msdn.microsoft.com/en-us/library/bb386106.aspx#LoadBehavior for load behavior values.
+
+// See also: Registry entries for VSTO addins
+// https://msdn.microsoft.com/en-us/library/bb386106.aspx
+
+// WARNING:
+// Examination of my registry shows that the following key exists:
+// HKCU/Software/Microsoft/Office/12.0/Word
+
+// This indicates to me that Microsoft may have changed its registry
+// format for Office products.  It may be necessary to insert the Office version
+// number into the key chain:
+//  HKCU/Software/Microsoft/Office/12.0/Outlook/Addins/TestAddin2.Connect
+//  (replace 12.0 with version of your choice)
+
+//-----------------------------------------------------------------------------
