@@ -20,8 +20,8 @@
 #include <atlcom.h>
 #include <atlctl.h>
 #include <msxml2.h>
-#include  <Mshtml.h>
-#include 	<Winhttp.h>
+#include <Mshtml.h>
+#include <Winhttp.h>
 #include <atlstr.h>
 #include <atlsafe.h>
 //#import "C:\Program Files\Common Files\DESIGNER\MSADDNDR.DLL" raw_interfaces_only, raw_native_types, no_namespace, named_guids, auto_search ,auto_rename
@@ -56,7 +56,7 @@
 
 // Forms type library (i.e. fm20.dll)
 #import "libid:0D452EE1-E08F-101A-852E-02608C4D0BB4"\
-	auto_rename auto_search raw_interfaces_only  rename_namespace("Forms")
+	auto_rename auto_search raw_interfaces_only  rename_namespace("Forms") rename("Font", "FmFont")
 using namespace Outlook;
 using namespace Office;
 using namespace Forms;
